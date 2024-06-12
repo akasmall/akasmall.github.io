@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font: 18px/1.5 sans-serif;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* BEGIN (write your solution here) */
+.profile-card h2::before {
+  margin-right: 5px;
+  content: "\1F464";
+}
+
+.profile-card h2::after {
+  display: block;
+  background-color: #ccc;
+  height: 2px;
+  margin-top: 5px; 
+
+  content: "";
+}
+
+.profile-card p::first-letter {
+  color: #6936f4;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* END */
